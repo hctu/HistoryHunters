@@ -1,0 +1,24 @@
+{
+  "name": "hunters-collection",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.30.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "@vitejs/plugin-react": "4.2.1",
+    "typescript": "5.4.5",
+    "vite": "4.5.14"
+  }
+}
