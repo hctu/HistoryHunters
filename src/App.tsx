@@ -20,9 +20,16 @@ function RouteEffects() {
 export default function App() {
   const location = useLocation()
 
+  const skipToContent = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    const main = document.getElementById('main-content')
+    main?.focus()
+    main?.scrollIntoView()
+  }
+
   return (
     <>
-      <a className="skip-link" href="#main-content">Skip to the collection</a>
+      <a className="skip-link" href="#main-content" onClick={skipToContent}>Skip to the collection</a>
       <RouteEffects />
       <div className="route-frame" key={location.pathname}>
         <Routes location={location}>

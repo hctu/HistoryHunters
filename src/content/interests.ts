@@ -1,5 +1,7 @@
 import type { Interest } from './types'
 
+const image = (filename: string) => `${import.meta.env.BASE_URL}images/${filename}`
+
 export const interests: Interest[] = [
   {
     number: '01',
@@ -9,7 +11,7 @@ export const interests: Interest[] = [
     deck: 'How immense states preserve order, cultivate beauty, and make their own fragility difficult to see.',
     status: 'Deep study · expanding',
     theme: 'paper',
-    image: '/images/ming-qing.jpg',
+    image: image('ming-qing.jpg'),
     imageAlt: 'A scholar’s table with a landscape scroll, porcelain brush washer, papers, and seal.',
     prominence: 'major',
     premise: 'I keep returning to the tension between the polished image of imperial order and the unruly human machinery required to sustain it.',
@@ -24,7 +26,7 @@ export const interests: Interest[] = [
       },
       {
         type: 'figure', id: 'objects', label: 'Object lesson', title: 'The world arranged at arm’s length',
-        image: '/images/ming-qing.jpg', alt: 'Landscape scroll and scholar’s objects on a dark wooden table.',
+        image: image('ming-qing.jpg'), alt: 'Landscape scroll and scholar’s objects on a dark wooden table.',
         caption: 'A generated study image—not a historical artifact—used here to establish the material language of the exhibit.',
         body: 'A scholar’s table is a useful scale for approaching the period. Inkstone, seal, brush, paper, and collected object make a small theatre of discernment. Private taste and public identity meet here.',
       },
@@ -60,7 +62,7 @@ export const interests: Interest[] = [
     deck: 'Domestic horror built from hospitality, suspicion, and the terrible cost of being wrong.',
     status: 'Active obsession',
     theme: 'night',
-    image: '/images/not-human.jpg',
+    image: image('not-human.jpg'),
     imageAlt: 'A dark domestic hallway with a closed door and an old television glowing in the next room.',
     imagePosition: 'center',
     prominence: 'feature',
@@ -76,7 +78,7 @@ export const interests: Interest[] = [
       },
       {
         type: 'figure', id: 'threshold', label: 'Threshold study', title: 'The door is the whole machine',
-        image: '/images/not-human.jpg', alt: 'A dim hallway and closed door lit by an old television.',
+        image: image('not-human.jpg'), alt: 'A dim hallway and closed door lit by an old television.',
         caption: 'An original atmospheric study for this exhibit; no game imagery is reproduced.',
         body: 'A closed door divides the known from the merely claimed. The important action happens before it opens: listening, imagining, rehearsing a decision.',
       },
@@ -105,7 +107,7 @@ export const interests: Interest[] = [
     deck: 'A world built less from lore than from the records left behind when people make costly choices.',
     status: 'Living world · in play',
     theme: 'campaign',
-    image: '/images/dnd-campaign.jpg',
+    image: image('dnd-campaign.jpg'),
     imageAlt: 'A candlelit campaign table covered in a hand-drawn map, letters, journals, and small metal figures.',
     prominence: 'feature',
     premise: 'The campaign becomes real when its history stops waiting for the players and starts answering them.',
@@ -120,7 +122,7 @@ export const interests: Interest[] = [
       },
       {
         type: 'figure', id: 'map-room', label: 'Map room', title: 'The realm as an argument',
-        image: '/images/dnd-campaign.jpg', alt: 'A fantasy campaign map surrounded by wax-sealed letters and field journals.',
+        image: image('dnd-campaign.jpg'), alt: 'A fantasy campaign map surrounded by wax-sealed letters and field journals.',
         caption: 'The table is composed as a working archive, not a reliquary. Things have been moved because the world is in motion.',
         body: 'Borders on the campaign map are claims. Roads reveal what power can reach. Blank space is rarely empty; it is usually a confession by the cartographer.',
       },
@@ -191,7 +193,7 @@ export const interests: Interest[] = [
     deck: 'Not a story of one defeat, but of an institution learning that inherited scale is not the same as present power.',
     status: 'Research dossier · expanding',
     theme: 'naval',
-    image: '/images/royal-navy.jpg',
+    image: image('royal-navy.jpg'),
     imageAlt: 'A naval architect’s table with a warship blueprint, old fleet photograph, folders, and a brass instrument.',
     prominence: 'standard',
     premise: 'Decline becomes intellectually useful when it stops being a morality play and becomes a series of constrained decisions.',
@@ -206,7 +208,7 @@ export const interests: Interest[] = [
       },
       {
         type: 'figure', id: 'documents', label: 'Document table', title: 'Power reduced to paper',
-        image: '/images/royal-navy.jpg', alt: 'Warship plans and archival folders on a dark desk.',
+        image: image('royal-navy.jpg'), alt: 'Warship plans and archival folders on a dark desk.',
         caption: 'Generated exhibit imagery. The ship plan is atmospheric and should not be read as a technical source.',
         body: 'The plan promises control: every compartment known, every line specified. The surrounding files are a reminder that no ship exists outside competing requirements and institutional compromise.',
       },

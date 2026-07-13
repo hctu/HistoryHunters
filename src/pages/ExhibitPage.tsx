@@ -16,10 +16,10 @@ function Rail({ interest, previous, next }: { interest: Interest; previous: Inte
       </div>
       <nav className="rail-sections" aria-label="On this exhibit page">
         {interest.modules.map((module, index) => (
-          <a href={`#${module.id}`} key={module.id}>
+          <button type="button" onClick={() => document.getElementById(module.id)?.scrollIntoView({ behavior: 'smooth' })} key={module.id}>
             <span>{String(index + 1).padStart(2, '0')}</span>
             {module.type === 'quote' ? 'Question' : 'label' in module ? module.label : 'Note'}
-          </a>
+          </button>
         ))}
       </nav>
       <nav className="rail-neighbors" aria-label="Adjacent exhibits">
@@ -52,7 +52,7 @@ export function ExhibitPage() {
         <Link to={`/interest/${next.slug}`} aria-label={`Next exhibit: ${next.title}`}>Next →</Link>
       </div>
 
-      <main className="exhibit-main" id="main-content">
+      <main className="exhibit-main" id="main-content" tabIndex={-1}>
         <header className={`exhibit-hero${interest.image ? ' exhibit-hero--image' : ''}`}>
           {interest.image && (
             <div className="exhibit-hero-image">

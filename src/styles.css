@@ -116,7 +116,7 @@
     position: absolute;
     z-index: -2;
     inset: 0;
-    background: url('/images/collection-study.jpg') center / cover no-repeat;
+    background: url('/HistoryHunters/images/collection-study.jpg') center / cover no-repeat;
     filter: saturate(.75) contrast(1.05);
     transform: scale(1.015);
   }
@@ -143,13 +143,25 @@
     content: "";
   }
 
-  .masthead-nav a { text-decoration: none; }
+  .masthead-nav a,
+  .masthead-nav button { text-decoration: none; }
+
+  .masthead-nav button,
+  .text-link,
+  .rail-sections button {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+  }
 
   .wordmark { display: flex; align-items: center; gap: 1rem; color: var(--brass); }
   .wordmark > span:last-child { display: flex; flex-direction: column; gap: .22rem; }
   .wordmark strong { font: 500 .72rem/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; }
   .wordmark small { color: #bdb39e; font: 500 .54rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; }
-  .masthead-nav > a:last-child { color: #d4cab6; font: 500 .58rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
+  .masthead-nav > button:last-child { color: #d4cab6; font: 500 .58rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
 
   .masthead-copy {
     align-self: center;
@@ -460,7 +472,7 @@
   .rail-title .collection-mark { color: #725e3d; }
 
   .rail-sections { display: flex; flex-direction: column; border-top: 1px solid rgba(158, 131, 79, .24); }
-  .rail-sections a {
+  .rail-sections button {
     display: grid;
     grid-template-columns: 2rem 1fr;
     padding: .7rem 0;
@@ -471,8 +483,8 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-  .rail-sections a span { color: #5f584b; }
-  .rail-sections a:hover { color: #d3b979; }
+  .rail-sections button span { color: #5f584b; }
+  .rail-sections button:hover { color: #d3b979; }
 
   .rail-neighbors { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: auto; }
   .rail-neighbors a { color: #aea28d; font: 400 .78rem/1.25 var(--serif); text-decoration: none; }

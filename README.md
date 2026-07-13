@@ -11,6 +11,16 @@ npm run dev
 
 Use `npm run build` for a production build.
 
+## Deploy to GitHub Pages
+
+The app is configured for the repository subpath at `https://hctu.github.io/HistoryHunters/`. Publish a production build with:
+
+```bash
+npm run deploy
+```
+
+This updates the `gh-pages` branch. Exhibit navigation uses URL hashes so direct links and browser refreshes work on static hosting.
+
 ## Add or edit an interest
 
 All exhibit content lives in `src/content/interests.ts`. Each entry controls:

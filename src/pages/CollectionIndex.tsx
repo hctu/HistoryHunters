@@ -28,6 +28,8 @@ function InterestTile({ interest }: { interest: Interest }) {
 }
 
 export function CollectionIndex() {
+  const scrollToCollection = () => document.getElementById('collection-index')?.scrollIntoView({ behavior: 'smooth' })
+
   return (
     <div className="collection-page">
       <header className="collection-masthead">
@@ -36,7 +38,7 @@ export function CollectionIndex() {
             <CollectionMark compact />
             <span><strong>Hunter’s Collection</strong><small>Private folio · Vol. I</small></span>
           </Link>
-          <a href="#collection-index">Index <span aria-hidden="true">↓</span></a>
+          <button type="button" onClick={scrollToCollection}>Index <span aria-hidden="true">↓</span></button>
         </nav>
 
         <div className="masthead-image" aria-hidden="true" />
@@ -44,12 +46,12 @@ export function CollectionIndex() {
           <p className="folio-label">Currently occupying my mind</p>
           <h1>A collection of interests, obsessions, and unanswered questions.</h1>
           <p className="masthead-intro">Not a fixed portrait. More like a desk left open: subjects arrive, gather notes, interrupt one another, and sometimes disappear.</p>
-          <a className="text-link" href="#collection-index">Browse the current folios <span aria-hidden="true">↓</span></a>
+          <button className="text-link" type="button" onClick={scrollToCollection}>Browse the current folios <span aria-hidden="true">↓</span></button>
         </div>
         <div className="masthead-notation" aria-hidden="true"><span>H</span><i /><small>MMXXVI</small></div>
       </header>
 
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <section className="collection-intro" id="collection-index" aria-labelledby="collection-title">
           <div>
             <p className="eyebrow">The present collection</p>
