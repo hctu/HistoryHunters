@@ -68,6 +68,15 @@ export function ExhibitPage() {
           <span className="hero-coordinate" aria-hidden="true">HC—{interest.number} / 26</span>
         </header>
 
+        {interest.theme === 'digital' && (
+          <div className="digital-statusbar" aria-hidden="true">
+            <span><i /> Archive system</span>
+            <span>Collection 08</span>
+            <span>Local catalogue</span>
+            <span>Ready</span>
+          </div>
+        )}
+
         <article className="exhibit-body">
           {interest.modules.map((module) => <ExhibitModule module={module} key={module.id} />)}
         </article>
