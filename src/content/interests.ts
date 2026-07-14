@@ -235,13 +235,13 @@ export const interests: Interest[] = [
   {
     number: '06',
     slug: 'japanese-history-aesthetics',
-    title: 'Japanese History',
-    kicker: 'War, order, empire, and reinvention',
-    deck: 'From the fractured authority of Sengoku to the contested memory of the Shōwa era.',
-    status: 'Four-period study · expanding',
+    title: 'Japanese History & Aesthetics',
+    kicker: 'War, order, spirits, images, and reinvention',
+    deck: 'From Sengoku and Tokugawa rule to modern Japan—and the myths, monsters, and images carried through those transformations.',
+    status: 'History and image study · expanding',
     theme: 'japan',
     prominence: 'minor',
-    premise: 'I am interested in the moments when Japan rebuilt the meaning of authority: first through war, then ordered peace, accelerated modernity, empire, defeat, and recovery.',
+    premise: 'I am interested in how Japan repeatedly rebuilt authority and modernity while stories, spirits, objects, and visual traditions gave those changes another language.',
     modules: [
       {
         type: 'essay', id: 'orientation', label: 'Orientation', title: 'Four transformations, one continuing argument',
@@ -269,8 +269,34 @@ export const interests: Interest[] = [
           { meta: 'Memory', title: 'Who owns the Shōwa past?', detail: 'Defeat and prosperity sit beside incompatible accounts of responsibility and loss.' },
         ],
       },
+      {
+        type: 'essay', id: 'myth-and-image', label: 'Myth & image', title: 'The historical life of the supernatural',
+        body: [
+          'Yōkai, oni, yūrei, and other supernatural beings do not sit outside history. Court chronicles, Buddhist cosmology, shrine traditions, local stories, theatre, woodblock print, illustrated catalogues, and modern media continually rename and redesign them.',
+          'That movement is what interests me. A spirit changes when it leaves oral tradition for an illustrated scroll, enters an Edo-period bestiary, becomes a mass-produced print, or returns through film and games. The creature survives, but the social work performed by its image changes.',
+        ],
+        aside: 'Working rule: trace the image and its historical moment before treating a being as timeless folklore.',
+      },
+      {
+        type: 'ledger', id: 'bestiary', label: 'Image bestiary', title: 'Beings at the boundary',
+        items: [
+          { meta: 'Yōkai', title: 'The strange made particular', detail: 'Uncanny phenomena, transformed animals, animated objects, and local presences gathered under an intentionally unstable category.' },
+          { meta: 'Oni', title: 'Punishment, disorder, and dangerous difference', detail: 'Demonic bodies that can represent hell, disease, outsiders, or forces brought under ritual control.' },
+          { meta: 'Yūrei', title: 'The dead with unfinished claims', detail: 'Ghosts whose attachments, wrongs, or improper deaths disturb the expected separation between worlds.' },
+          { meta: 'Tsukumogami', title: 'Material memory becomes animate', detail: 'Tools and possessions imagined as living after great age—a mythology of use, neglect, and the moral life of objects.' },
+        ],
+      },
+      {
+        type: 'notes', id: 'afterlife-art', label: 'Image cabinet', title: 'Death and the supernatural on paper',
+        notes: [
+          { mark: 'I', text: 'Jigoku-zōshi, the Hell Scrolls: punishment arranged as a landscape the living can inspect.' },
+          { mark: 'II', text: 'Gaki-zōshi, the Scrolls of Hungry Ghosts: appetite and suffering given emaciated, unsettling form.' },
+          { mark: 'III', text: 'Hyakki yagyō, the Night Parade of One Hundred Demons: a bestiary transformed into procession and social space.' },
+          { mark: 'IV', text: 'Edo illustrated encyclopedias: the supernatural collected, named, standardized, and playfully redesigned through print.' },
+        ],
+      },
     ],
-    related: ['japanese-mythology', 'ming-qing-china', 'royal-navy'],
+    related: ['ming-qing-china', 'royal-navy', 'digital-museum'],
   },
   {
     number: '07',
@@ -308,47 +334,64 @@ export const interests: Interest[] = [
   },
   {
     number: '08',
-    slug: 'japanese-mythology',
-    title: 'Japanese Mythology',
-    kicker: 'Yōkai, oni, ghosts, and the landscapes of the dead',
-    deck: 'A changing bestiary of beings that gather wherever categories, places, and lives become unstable.',
-    status: 'Open folio · gathering apparitions',
-    theme: 'mythology',
+    slug: 'digital-museum',
+    title: 'The Digital Museum',
+    kicker: 'Old machines, lost software, and environments made usable again',
+    deck: 'A curated, playable archive of the digital worlds I grew up with—preserved on original hardware where possible.',
+    status: 'Living archive · under construction',
+    theme: 'digital',
     prominence: 'minor',
-    premise: 'I am fascinated by the beings that make a boundary visible: between human and animal, household and wilderness, ordinary death and a death that refuses to settle.',
+    premise: 'I want to preserve old hardware, software, games, operating systems, and websites as experiences—not just screenshots or files—before their original contexts disappear.',
     modules: [
       {
-        type: 'essay', id: 'thresholds', label: 'Orientation', title: 'A world with porous boundaries',
+        type: 'essay', id: 'mission', label: 'Museum brief', title: 'Keep the experience, not only the evidence',
         body: [
-          'Japanese mythology is not a single fixed canon or a neat catalogue of monsters. Court chronicles, Buddhist cosmology, shrine traditions, local stories, theatre, prints, games, and modern media continually borrow from and revise one another.',
-          'That instability is the attraction. Yōkai and oni are not simply creatures to identify. They give shape to anxieties about place, conduct, illness, strangers, household objects, and the dead. Their forms change because the boundaries they patrol change too.',
+          'The Digital Museum is my private technology-preservation project: a curated collection of old hardware, software, games, operating systems, and web experiences, especially from the Apple ecosystem and the 2000s through the early 2010s. The goal is to keep them genuinely usable rather than merely documented.',
+          'This is not a random ROM dump or a gigantic drive labeled “OLD STUFF.” The museum part means selection and context. Each object should have the right version, artwork, dates, description, metadata, and—ideally—a clean way to launch it and understand why it belongs here.',
         ],
-        aside: 'Working rule: trace the image and the historical moment before treating a being as timeless folklore.',
+        aside: 'Acquisition rule: an artifact enters the collection with provenance, context, and a path back to use.',
       },
       {
-        type: 'ledger', id: 'beings', label: 'Provisional bestiary', title: 'Four ways the boundary answers back',
+        type: 'essay', id: 'original-hardware', label: 'Primary objects', title: 'Original hardware is part of the source',
+        body: [
+          'Full iOS emulation is awkward and often inauthentic. An actual iPhone 4, 5, or 5s preserves the interface, speed, touchscreen response, app behavior, battery assumptions, and limitations of its period. The friction is not incidental; it is part of what the software was.',
+          'Period-appropriate iOS versions, preserved IPSWs, Legacy iOS Kit, jailbreaks, and carefully chosen downgrades make the device timeline usable. The point is not simply to own old phones. It is to keep complete relationships between hardware, operating system, application, and moment.',
+        ],
+        aside: 'Real UI. Real hardware. Real limitations. That is the artifact.',
+      },
+      {
+        type: 'ledger', id: 'collection', label: 'Collection wings', title: 'What the museum preserves',
         items: [
-          { meta: 'Yōkai', title: 'The strange made particular', detail: 'A capacious category for uncanny phenomena, transformed animals, animated objects, and named local presences.' },
-          { meta: 'Oni', title: 'The body of punishment and disorder', detail: 'Demonic figures that can represent hell, disease, dangerous outsiders, or forces brought under ritual control.' },
-          { meta: 'Yūrei', title: 'The dead with unfinished claims', detail: 'Ghosts whose attachments, wrongs, or improper deaths disturb the expected separation between worlds.' },
-          { meta: 'Tsukumogami', title: 'Objects after a hundred years', detail: 'Tools and possessions imagined as animate—a mythology of use, neglect, age, and material memory.' },
+          { meta: 'Apple timeline', title: 'iPhone, iPod, Mac, and period software', detail: 'Original devices on appropriate iOS versions, Snow Leopard-era environments, old Xcode releases, iOS SDKs, firmware, manuals, and box art.' },
+          { meta: 'Lost applications', title: 'Delisted games and archived IPA files', detail: 'Applications preserved with version data, artwork, descriptions, dependencies, and a working local installation path where possible.' },
+          { meta: 'Games', title: 'Flash, Wii, DS, 3DS, Xbox, and arcade', detail: 'A selective playable collection organized around experiences worth returning to, not completion for its own sake.' },
+          { meta: 'Systems & web', title: 'Windows XP through 7 and the vanished web', detail: 'Old desktop environments, SWF files, archived websites, and reconstructions accessed through Wayback-style proxies.' },
         ],
       },
       {
-        type: 'notes', id: 'afterlife-art', label: 'Image cabinet', title: 'Death made visible on paper',
+        type: 'notes', id: 'catalogue-standard', label: 'Accession standard', title: 'What makes a folder into a museum object',
         notes: [
-          { mark: 'I', text: 'Jigoku-zōshi, the Hell Scrolls: punishment arranged as a landscape the living can inspect.' },
-          { mark: 'II', text: 'Gaki-zōshi, the Scrolls of Hungry Ghosts: appetite and suffering given emaciated, unsettling form.' },
-          { mark: 'III', text: 'Hyakki yagyō, the Night Parade of One Hundred Demons: a procession that turns the bestiary into social space.' },
-          { mark: 'IV', text: 'Edo-period illustrated encyclopedias: the supernatural collected, named, and redesigned through print culture.' },
+          { mark: '01', text: 'Correct version: firmware, application build, operating system, and compatible hardware are recorded together.' },
+          { mark: '02', text: 'Context: release dates, developer, contemporary description, manuals, artwork, and the story of disappearance.' },
+          { mark: '03', text: 'Integrity: original files remain untouched while working copies, patches, and restoration notes are kept separately.' },
+          { mark: '04', text: 'Access: every preserved experience should have the clearest practical route from catalogue entry to launch.' },
         ],
       },
       {
-        type: 'quote', id: 'question', quote: 'What changes when the monster leaves an oral story and enters an illustrated catalogue?',
-        note: 'The question guiding this folio’s image collection.',
+        type: 'ledger', id: 'museum-system', label: 'Museum system', title: 'Archive, laboratory, and gallery',
+        items: [
+          { meta: 'Original artifacts', title: 'The physical device timeline', detail: 'Phones, music players, computers, consoles, media, packaging, and peripherals kept in usable condition.' },
+          { meta: 'Preservation store', title: 'The canonical archive', detail: 'Firmware, software, checksums, metadata, documentation, artwork, and untouched source files.' },
+          { meta: 'Modern laboratory', title: 'The M3 Mac as conservation bench', detail: 'The present-day machine used to organize, emulate, repair, convert, test, and document the collection.' },
+          { meta: 'Public face', title: 'A television or Raspberry Pi terminal', detail: 'A deliberately simple museum interface that makes the collection browsable and launches prepared experiences.' },
+        ],
+      },
+      {
+        type: 'quote', id: 'definition', quote: 'A curated, playable archive of the digital environments I grew up with—preserved on original devices where possible and emulated or reconstructed where necessary.',
+        note: 'The clearest definition of the project.',
       },
     ],
-    related: ['japanese-history-aesthetics', 'not-a-human', 'ming-qing-china'],
+    related: ['current-listening', 'not-a-human', 'history-hunters'],
   },
 ]
 

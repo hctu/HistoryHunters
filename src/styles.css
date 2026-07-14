@@ -296,12 +296,23 @@
       linear-gradient(120deg, #17150f, #070807);
   }
 
-  .interest-tile--mythology .tile-surface {
+  .interest-tile--digital .tile-surface {
     background:
-      radial-gradient(circle at 78% 38%, rgba(218, 207, 166, .82) 0 2.5rem, transparent 2.6rem),
-      radial-gradient(ellipse at 76% 68%, transparent 0 2.8rem, rgba(121, 47, 37, .36) 2.9rem 3rem, transparent 3.1rem),
-      repeating-linear-gradient(168deg, transparent 0 18px, rgba(202, 184, 142, .06) 19px 20px),
-      linear-gradient(120deg, #161411, #29231f 55%, #090a0c);
+      linear-gradient(90deg, rgba(7, 9, 9, .76), rgba(7, 9, 9, .18)),
+      repeating-linear-gradient(0deg, transparent 0 3px, rgba(164, 189, 167, .055) 4px),
+      radial-gradient(circle at 82% 48%, rgba(155, 181, 159, .14), transparent 11rem),
+      linear-gradient(125deg, #111516, #293033 54%, #090b0c);
+  }
+
+  .interest-tile--digital .tile-surface::after {
+    position: absolute;
+    top: 22%;
+    right: 12%;
+    width: min(34%, 11rem);
+    aspect-ratio: 4 / 3;
+    border: 1px solid rgba(174, 194, 177, .32);
+    box-shadow: inset 0 0 2rem rgba(151, 183, 157, .08), 0 0 0 8px rgba(14, 18, 19, .45);
+    content: "";
   }
 
   .interest-tile--field .tile-surface {
@@ -432,12 +443,12 @@
     --rule: rgba(203, 175, 127, .17);
   }
 
-  .theme-mythology {
-    --page-bg: #171715;
-    --page-ink: #ded8c8;
-    --accent: #b2604e;
-    --muted: #979185;
-    --rule: rgba(198, 178, 139, .17);
+  .theme-digital {
+    --page-bg: #15191a;
+    --page-ink: #d8ddd8;
+    --accent: #9ab69e;
+    --muted: #89938f;
+    --rule: rgba(164, 188, 170, .17);
   }
 
   .exhibit-page::before {
@@ -453,7 +464,7 @@
 
   .theme-night::before,
   .theme-listening::before,
-  .theme-mythology::before { mix-blend-mode: soft-light; opacity: .18; }
+  .theme-digital::before { mix-blend-mode: soft-light; opacity: .18; }
 
   .collection-rail {
     position: fixed;

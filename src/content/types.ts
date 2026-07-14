@@ -1,4 +1,4 @@
-export type ThemeName = 'paper' | 'night' | 'campaign' | 'naval' | 'field' | 'japan' | 'listening' | 'mythology'
+export type ThemeName = 'paper' | 'night' | 'campaign' | 'naval' | 'field' | 'japan' | 'listening' | 'digital'
 
 export type EssayModule = {
   type: 'essay'
