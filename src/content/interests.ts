@@ -235,31 +235,42 @@ export const interests: Interest[] = [
   {
     number: '06',
     slug: 'japanese-history-aesthetics',
-    title: 'Japanese History & Aesthetics',
-    kicker: 'Form, season, impermanence, and the danger of easy elegance',
-    deck: 'Looking past the polished shorthand to the historical arguments inside aesthetic form.',
-    status: 'Open folio · early notes',
+    title: 'Japanese History',
+    kicker: 'War, order, empire, and reinvention',
+    deck: 'From the fractured authority of Sengoku to the contested memory of the Shōwa era.',
+    status: 'Four-period study · expanding',
     theme: 'japan',
     prominence: 'minor',
-    premise: 'I am interested in how aesthetic restraint becomes legible only when its excesses, labor, and historical conditions remain visible.',
+    premise: 'I am interested in the moments when Japan rebuilt the meaning of authority: first through war, then ordered peace, accelerated modernity, empire, defeat, and recovery.',
     modules: [
       {
-        type: 'essay', id: 'orientation', label: 'Orientation', title: 'Against the mood board',
+        type: 'essay', id: 'orientation', label: 'Orientation', title: 'Four transformations, one continuing argument',
         body: [
-          'Japanese aesthetics are especially vulnerable to being reduced to a handful of exportable adjectives: minimal, serene, imperfect. I want this folio to resist that flattening.',
-          'The more interesting task is to ask who made a form, for whom, under which rules, and what alternative forms existed beside it. Beauty becomes richer when it regains its arguments.',
+          'The Sengoku, Tokugawa, Meiji, and Shōwa periods are often presented as distinct worlds: battlefield, castle town, factory, and modern metropolis. I want to follow the arguments that pass between them—who may wield violence, what makes rule legitimate, and how a state explains sudden change as continuity.',
+          'This is not a march from feudalism to modernity. Each settlement creates new forms of order and new exclusions. The interest lies in what survives a transformation, what is deliberately reinvented, and what later memory smooths away.',
+        ],
+        aside: 'Current question: how often does political reinvention succeed by presenting itself as restoration?',
+      },
+      {
+        type: 'timeline', id: 'periods', label: 'Period table', title: 'Four rooms in the historical sequence',
+        items: [
+          { date: '1467–1615', title: 'Sengoku', detail: 'Civil war, regional power, castle building, religious leagues, and the long work of reunification.' },
+          { date: '1603–1868', title: 'Tokugawa shogunate', detail: 'A durable military government turns peace into administration, hierarchy, travel, commerce, and urban culture.' },
+          { date: '1868–1912', title: 'Meiji', detail: 'Restoration becomes revolution: centralization, industrialization, conscription, constitutional government, and empire.' },
+          { date: '1926–1989', title: 'Shōwa', detail: 'Militarism, total war, defeat, occupation, rapid growth, and an unresolved struggle over historical memory.' },
         ],
       },
       {
-        type: 'ledger', id: 'threads', label: 'Threads', title: 'Subjects waiting to grow',
+        type: 'ledger', id: 'questions', label: 'Research threads', title: 'Questions across the periods',
         items: [
-          { meta: 'Architecture', title: 'The room as a sequence of permissions' },
-          { meta: 'Print', title: 'Repetition, commerce, and the circulating image' },
-          { meta: 'Season', title: 'Nature as calendar, convention, and social knowledge' },
+          { meta: 'Authority', title: 'From warrior household to governing system', detail: 'How personal military loyalty becomes bureaucracy, law, and public order.' },
+          { meta: 'Exchange', title: 'Beyond the myth of isolation', detail: 'Managed foreign contact, imported knowledge, and the political meaning of the boundary.' },
+          { meta: 'Modernity', title: 'Reform at imperial speed', detail: 'How institutions, industry, military power, and imperial ambition become mutually reinforcing.' },
+          { meta: 'Memory', title: 'Who owns the Shōwa past?', detail: 'Defeat and prosperity sit beside incompatible accounts of responsibility and loss.' },
         ],
       },
     ],
-    related: ['ming-qing-china', 'current-listening', 'history-hunters'],
+    related: ['japanese-mythology', 'ming-qing-china', 'royal-navy'],
   },
   {
     number: '07',
@@ -294,6 +305,50 @@ export const interests: Interest[] = [
       },
     ],
     related: ['not-a-human', 'japanese-history-aesthetics', 'dnd-campaign'],
+  },
+  {
+    number: '08',
+    slug: 'japanese-mythology',
+    title: 'Japanese Mythology',
+    kicker: 'Yōkai, oni, ghosts, and the landscapes of the dead',
+    deck: 'A changing bestiary of beings that gather wherever categories, places, and lives become unstable.',
+    status: 'Open folio · gathering apparitions',
+    theme: 'mythology',
+    prominence: 'minor',
+    premise: 'I am fascinated by the beings that make a boundary visible: between human and animal, household and wilderness, ordinary death and a death that refuses to settle.',
+    modules: [
+      {
+        type: 'essay', id: 'thresholds', label: 'Orientation', title: 'A world with porous boundaries',
+        body: [
+          'Japanese mythology is not a single fixed canon or a neat catalogue of monsters. Court chronicles, Buddhist cosmology, shrine traditions, local stories, theatre, prints, games, and modern media continually borrow from and revise one another.',
+          'That instability is the attraction. Yōkai and oni are not simply creatures to identify. They give shape to anxieties about place, conduct, illness, strangers, household objects, and the dead. Their forms change because the boundaries they patrol change too.',
+        ],
+        aside: 'Working rule: trace the image and the historical moment before treating a being as timeless folklore.',
+      },
+      {
+        type: 'ledger', id: 'beings', label: 'Provisional bestiary', title: 'Four ways the boundary answers back',
+        items: [
+          { meta: 'Yōkai', title: 'The strange made particular', detail: 'A capacious category for uncanny phenomena, transformed animals, animated objects, and named local presences.' },
+          { meta: 'Oni', title: 'The body of punishment and disorder', detail: 'Demonic figures that can represent hell, disease, dangerous outsiders, or forces brought under ritual control.' },
+          { meta: 'Yūrei', title: 'The dead with unfinished claims', detail: 'Ghosts whose attachments, wrongs, or improper deaths disturb the expected separation between worlds.' },
+          { meta: 'Tsukumogami', title: 'Objects after a hundred years', detail: 'Tools and possessions imagined as animate—a mythology of use, neglect, age, and material memory.' },
+        ],
+      },
+      {
+        type: 'notes', id: 'afterlife-art', label: 'Image cabinet', title: 'Death made visible on paper',
+        notes: [
+          { mark: 'I', text: 'Jigoku-zōshi, the Hell Scrolls: punishment arranged as a landscape the living can inspect.' },
+          { mark: 'II', text: 'Gaki-zōshi, the Scrolls of Hungry Ghosts: appetite and suffering given emaciated, unsettling form.' },
+          { mark: 'III', text: 'Hyakki yagyō, the Night Parade of One Hundred Demons: a procession that turns the bestiary into social space.' },
+          { mark: 'IV', text: 'Edo-period illustrated encyclopedias: the supernatural collected, named, and redesigned through print culture.' },
+        ],
+      },
+      {
+        type: 'quote', id: 'question', quote: 'What changes when the monster leaves an oral story and enters an illustrated catalogue?',
+        note: 'The question guiding this folio’s image collection.',
+      },
+    ],
+    related: ['japanese-history-aesthetics', 'not-a-human', 'ming-qing-china'],
   },
 ]
 

@@ -55,19 +55,14 @@ export function CollectionIndex() {
         <section className="collection-intro" id="collection-index" aria-labelledby="collection-title">
           <div>
             <p className="eyebrow">The present collection</p>
-            <h2 id="collection-title">Seven open folios</h2>
+            <h2 id="collection-title">{interests.length} open folios</h2>
           </div>
           <p>Scale reflects present attention, not permanent importance. This arrangement will change.</p>
-          <span className="collection-date">Recorded · 13 July 2026</span>
+          <span className="collection-date">Recorded · 14 July 2026</span>
         </section>
 
         <section className="interest-composition" aria-label="Current interests">
           {interests.map((interest) => <InterestTile interest={interest} key={interest.slug} />)}
-          <div className="future-tile" aria-label="Space reserved for a future interest">
-            <CollectionMark />
-            <p>There is room on the table.</p>
-            <span>Folio 08 · unassigned</span>
-          </div>
         </section>
       </main>
 
